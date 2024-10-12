@@ -1,2 +1,4 @@
 aws-cdk-lib==2.154.0
 constructs>=10.0.0,<11.0.0
+#2. Ensure boto3 version is later than 1.28.63. The later version ensures access of the LLM models, else we would need to add a layer.
+boto3>=1.28.63
